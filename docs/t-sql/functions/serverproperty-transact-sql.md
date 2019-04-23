@@ -51,7 +51,7 @@ SERVERPROPERTY ( 'propertyname' )
 |屬性|傳回的值|  
 |--------------|---------------------|  
 |BuildClrVersion|建立 [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] 執行個體時所用的 [!INCLUDE[msCoName](../../includes/msconame-md.md)][!INCLUDE[dnprdnshort](../../includes/dnprdnshort-md.md)] 通用語言執行平台 (CLR) 版本。<br /><br /> NULL = 輸入無效、發生錯誤或不適用。<br /><br /> 基底資料型別：**nvarchar(128)**|  
-|定序|伺服器預設定序的名稱。<br /><br /> NULL = 輸入無效，或發生錯誤。<br /><br /> 基底資料型別：**nvarchar(128)**|  
+|Collation 定序 |伺服器預設定序的名稱。<br /><br /> NULL = 輸入無效，或發生錯誤。<br /><br /> 基底資料型別：**nvarchar(128)**|  
 |CollationID|[!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] 定序的識別碼。<br /><br /> 基底資料類型：**int**|  
 |ComparisonStyle|Windows 的定序比較樣式。<br /><br /> 基底資料類型：**int**|  
 |ComputerNamePhysicalNetBIOS|[!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] 執行個體目前執行所在之本機電腦的 NetBIOS 名稱。<br /><br /> 如果是容錯移轉叢集中的 [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] 叢集執行個體，當 [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] 執行個體容錯移轉到容錯移轉叢集中的其他節點時，這個值會跟著改變。<br /><br /> 在 [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] 的獨立執行個體中，這個值會維持不變，且會傳回與 MachineName 屬性相同的值。<br /><br /> **注意：** 如果 [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] 執行個體在容錯移轉叢集中，且您想要取得容錯移轉叢集執行個體的名稱，請使用 MachineName 屬性。<br /><br /> NULL = 輸入無效、發生錯誤或不適用。<br /><br /> 基底資料型別：**nvarchar(128)**|  
